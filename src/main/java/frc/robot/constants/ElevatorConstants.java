@@ -1,8 +1,18 @@
 package frc.robot.constants;
 
-public class TwoKrakenElevatorConstants {
+public class ElevatorConstants {
+    // initial: 0
+    // homeup: 5
+    // homedown: 6
+    // homed: 7
+    // L1: 1
+    // L2: 2
+    // L3: 3
+    // L4: 4
+
     public static final int kLeaderTalonID = 10;
     public static final int kFollowerTalonID = 11;
+    public static final int kHallSensorID = 12;
 
     public static final boolean leader_Neutalmode_Coast = true;
     public static final boolean follower_Neutalmode_Coast = true;
@@ -39,4 +49,16 @@ public class TwoKrakenElevatorConstants {
     public static final double follower_forwardSoftLimitThreshold = 0.0;
     public static final double follower_reverseSoftLimitThreshold = 0.0;
 
+    public static final double home_upTime = 0.5;
+    public static final double home_upVoltage = 2.0;
+    public static final double home_downTime = 3.0;
+    public static final double home_downVoltage = -2.0;
+
+    public static final double L1Position = 0.0;
+    public static final double L2Position = 0.0;
+    public static final double L3Position = 0.0;
+    public static final double L4Position = 0.0;
+    public static final double homePosition = 0.0;
+    public static final double reset2HomeTime = 3.0;
+    public static final double positionDeadBand = 0.1;
 }
